@@ -1,0 +1,124 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: olive;
+}
+
+.menu-bars {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.menu-bars ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-bars ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.active,
+ul li:hover {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    transition-duration: 2s;
+}
+
+.sab-menu {
+    display: none;
+}
+
+.menu-bars ul li:hover .sab-menu {
+    display: flex;
+    position: absolute;
+    background-color: black;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.sab-menu>ul {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.sab-menu {
+    border-radius: 15px;
+
+}
+
+.sab-menu>ul>li {
+    border-bottom: 1px solid white;
+}
+
+.sab-menu>ul>li:last-child {
+    border-bottom: none;
+}
+
+.sab-menu1>ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.sab-menu1 {
+    display: none;
+    border-radius: 15px;
+    margin-left: -15px;
+    margin-top: 15px;
+}
+
+ul>li:hover>.sab-menu1 {
+    display: flex;
+    position: absolute;
+    background-color: black;
+}
+
+.sab-menu1>ul>li {
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.sab-menu1>ul>li:last-child {
+    border-bottom: none;
+
+}
+
+.sab-menu2>ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+
+.sab-menu2 {
+    display: none;
+    background-color: black;
+    border-radius: 15px;
+}
+
+ul>li:hover>.sab-menu2 {
+    display: flex;
+    position: absolute;
+}
+
+.sab-menu2>ul>li {
+    /* margin-left: 90px; */
+    /* background-color: black; */
+    color: white;
+}
+
+.sab-menu2>ul>li:hover {
+    color: black;
+}
